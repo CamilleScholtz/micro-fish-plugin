@@ -1,7 +1,7 @@
 [{
   "Name": "fish",
   "Description": "plugin to make scripting in fish more pleasant",
-  "Tags": ["fish", "formatting"],
+  "Tags": ["fish"],
   "Versions": [
     {
       "Version": "0.1",
