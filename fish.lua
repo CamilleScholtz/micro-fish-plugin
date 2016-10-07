@@ -1,4 +1,4 @@
-VERSION = "0.1"
+VERSION = "0.1.0"
 
 if GetOption("fishfmt") == nil then
     AddOption("fishfmt", true)
