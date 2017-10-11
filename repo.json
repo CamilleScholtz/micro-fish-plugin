@@ -4,8 +4,8 @@
   "Tags": ["fish"],
   "Versions": [
     {
-      "Version": "0.1.0",
-      "Url": "https://github.com/onodera-punpun/micro-fish-plugin/archive/0.1.zip",
+      "Version": "0.1.1",
+      "Url": "https://github.com/onodera-punpun/micro-fish-plugin/archive/0.1.1.zip",
       "Require": {
         "micro": ">=1.0.3"
       }

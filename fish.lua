@@ -1,16 +1,10 @@
-VERSION = "0.1.0"
+VERSION = "0.1.1"
 
 if GetOption("fishfmt") == nil then
     AddOption("fishfmt", true)
 end
 
 MakeCommand("fishfmt", "fish.fishfmt", 0)
-
-function onViewOpen(view)
-    if view.Buf:FileType() == "fish" then
-        SetLocalOption("tabstospaces", "on", view)
-    end
-end
 
 function onSave(view)
     if CurView().Buf:FileType() == "fish" then
@@ -25,7 +19,7 @@ function fishfmt()
     local handle = io.popen("fish_indent -w " .. CurView().Buf.Path)
     local result = handle:read("*a")
     handle:close()
-    
+
     CurView():ReOpen()
 end
 
